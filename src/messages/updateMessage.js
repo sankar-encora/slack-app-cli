@@ -7,7 +7,7 @@ const { errorLog } = require('./error')
 
 const slackChatChannelName = process.env.SLACK_CHAT_CHANNEL_NAME || 'slack-app-cli';
 const slackChatChannelNameId = process.env.SLACK_CHAT_CHANNEL_NAME_ID || 'C020W0CSR32';
-const slackChatToken = process.env.SLACK_CHAT_TOKEN || 'xoxp-2018800179953-2006185255586-2023777289169-7fb5a6f76dbd244e956ed5646e67bc32';
+const slackChatToken = process.env.SLACK_CHAT_TOKEN || '';
 
 if (!slackChatToken && slackChatChannelName) {
   return errorLog('Must be provide the token to proceed further');
